@@ -91,7 +91,7 @@
 
     $('document').load(function(data){
         var requestWord = $.ajax({
-            url: "http://127.0.0.1:1776",
+            url: "http://wordify-meaneymiked.rhcloud.com",
             type: "GET",
             complete: function (xhr) {
                 theInfo = xhr.responseText;
@@ -106,7 +106,7 @@
 
     $("#wordifyMe").click(function () {
         var requestWord = $.ajax({
-            url: "http://127.0.0.1:1776",
+            url: "http://wordify-meaneymiked.rhcloud.com",
             type: "GET",
             complete: function(xhr) {
                 theInfo = xhr.responseText;
