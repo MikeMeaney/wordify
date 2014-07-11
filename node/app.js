@@ -19,7 +19,7 @@ http.createServer(function(req, res) {
         theWord=theWord.word;
         console.log(theWord);
 
-        var wordDefURL = 'http://api.wordnik.com:80/v4/word.json/' + theWord + '/definitions?limit=1&includeRelated=false&sourceDictionaries=all&useCanonical=true&includeTags=false&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5';
+        var wordDefURL = 'http://api.wordnik.com:80/v4/word.json/' + theWord + '/definitions?limit=1&includeRelated=true&sourceDictionaries=all&useCanonical=true&includeTags=false&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5';
         //Get the definition
         request(wordDefURL, function (error, response, body) {
             res.writeHead(200, {'Content-Type': 'text/plain', "Access-Control-Allow-Origin": '*'});
